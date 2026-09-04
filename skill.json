@@ -1,0 +1,39 @@
+{
+  "name": "genpark-natural-language-cte-sql-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Natural language to complex Common Table Expression (CTE) ANSI SQL query synthesizer with window function inference.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "data-analytics",
+  "tags": [
+    "julius-ai",
+    "sql-generator",
+    "text2sql",
+    "cte",
+    "postgresql"
+  ],
+  "inputs": {
+    "business_prompt": {
+      "type": "string"
+    },
+    "target_dialect": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "synthesis_id": {
+      "type": "string"
+    },
+    "synthesized_sql": {
+      "type": "string"
+    },
+    "contains_window_functions": {
+      "type": "boolean"
+    },
+    "query_plan_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
